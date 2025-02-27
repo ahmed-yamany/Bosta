@@ -3,8 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 55;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		73C691DB2D70BA6E00EFEE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C691D22D70BA6E00EFEE47 /* Assets.xcassets */; };
+		73C691DD2D70BA6E00EFEE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C691D52D70BA6E00EFEE47 /* LaunchScreen.storyboard */; };
+		73C691DE2D70BA6E00EFEE47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C691D72D70BA6E00EFEE47 /* Main.storyboard */; };
+		73C691DF2D70BA6E00EFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691D12D70BA6E00EFEE47 /* AppDelegate.swift */; };
+		73C691E02D70BA6E00EFEE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691D82D70BA6E00EFEE47 /* SceneDelegate.swift */; };
+		73C691E12D70BA6E00EFEE47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691D92D70BA6E00EFEE47 /* ViewController.swift */; };
+		73C691E42D70BA7100EFEE47 /* BostaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691E22D70BA7100EFEE47 /* BostaTests.swift */; };
+		73C691E82D70BA7400EFEE47 /* BostaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691E52D70BA7400EFEE47 /* BostaUITests.swift */; };
+		73C691E92D70BA7400EFEE47 /* BostaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691E62D70BA7400EFEE47 /* BostaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		73C691B42D70BA6100EFEE47 /* PBXContainerItemProxy */ = {
@@ -27,38 +39,17 @@
 		73C6919D2D70BA5F00EFEE47 /* Bosta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bosta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C691B32D70BA6100EFEE47 /* BostaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C691BD2D70BA6100EFEE47 /* BostaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C691D12D70BA6E00EFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73C691D22D70BA6E00EFEE47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73C691D32D70BA6E00EFEE47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C691D42D70BA6E00EFEE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73C691D62D70BA6E00EFEE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73C691D82D70BA6E00EFEE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		73C691D92D70BA6E00EFEE47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73C691E22D70BA7100EFEE47 /* BostaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaTests.swift; sourceTree = "<group>"; };
+		73C691E52D70BA7400EFEE47 /* BostaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaUITests.swift; sourceTree = "<group>"; };
+		73C691E62D70BA7400EFEE47 /* BostaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		73C691C52D70BA6100EFEE47 /* Exceptions for "Bosta" folder in "Bosta" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 73C6919C2D70BA5F00EFEE47 /* Bosta */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		73C6919F2D70BA5F00EFEE47 /* Bosta */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				73C691C52D70BA6100EFEE47 /* Exceptions for "Bosta" folder in "Bosta" target */,
-			);
-			path = Bosta;
-			sourceTree = "<group>";
-		};
-		73C691B62D70BA6100EFEE47 /* BostaTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BostaTests;
-			sourceTree = "<group>";
-		};
-		73C691C02D70BA6100EFEE47 /* BostaUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BostaUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		73C6919A2D70BA5F00EFEE47 /* Frameworks */ = {
@@ -88,9 +79,9 @@
 		73C691942D70BA5F00EFEE47 = {
 			isa = PBXGroup;
 			children = (
-				73C6919F2D70BA5F00EFEE47 /* Bosta */,
-				73C691B62D70BA6100EFEE47 /* BostaTests */,
-				73C691C02D70BA6100EFEE47 /* BostaUITests */,
+				73C691DA2D70BA6E00EFEE47 /* Bosta */,
+				73C691E32D70BA7100EFEE47 /* BostaTests */,
+				73C691E72D70BA7400EFEE47 /* BostaUITests */,
 				73C6919E2D70BA5F00EFEE47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +94,37 @@
 				73C691BD2D70BA6100EFEE47 /* BostaUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		73C691DA2D70BA6E00EFEE47 /* Bosta */ = {
+			isa = PBXGroup;
+			children = (
+				73C691D12D70BA6E00EFEE47 /* AppDelegate.swift */,
+				73C691D22D70BA6E00EFEE47 /* Assets.xcassets */,
+				73C691D32D70BA6E00EFEE47 /* Info.plist */,
+				73C691D52D70BA6E00EFEE47 /* LaunchScreen.storyboard */,
+				73C691D72D70BA6E00EFEE47 /* Main.storyboard */,
+				73C691D82D70BA6E00EFEE47 /* SceneDelegate.swift */,
+				73C691D92D70BA6E00EFEE47 /* ViewController.swift */,
+			);
+			path = Bosta;
+			sourceTree = "<group>";
+		};
+		73C691E32D70BA7100EFEE47 /* BostaTests */ = {
+			isa = PBXGroup;
+			children = (
+				73C691E22D70BA7100EFEE47 /* BostaTests.swift */,
+			);
+			path = BostaTests;
+			sourceTree = "<group>";
+		};
+		73C691E72D70BA7400EFEE47 /* BostaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				73C691E52D70BA7400EFEE47 /* BostaUITests.swift */,
+				73C691E62D70BA7400EFEE47 /* BostaUITestsLaunchTests.swift */,
+			);
+			path = BostaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,9 +141,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				73C6919F2D70BA5F00EFEE47 /* Bosta */,
 			);
 			name = Bosta;
 			packageProductDependencies = (
@@ -143,9 +162,6 @@
 			dependencies = (
 				73C691B52D70BA6100EFEE47 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				73C691B62D70BA6100EFEE47 /* BostaTests */,
-			);
 			name = BostaTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +181,6 @@
 			);
 			dependencies = (
 				73C691BF2D70BA6100EFEE47 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				73C691C02D70BA6100EFEE47 /* BostaUITests */,
 			);
 			name = BostaUITests;
 			packageProductDependencies = (
@@ -200,6 +213,7 @@
 				};
 			};
 			buildConfigurationList = 73C691982D70BA5F00EFEE47 /* Build configuration list for PBXProject "Bosta" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -207,8 +221,6 @@
 				Base,
 			);
 			mainGroup = 73C691942D70BA5F00EFEE47;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 73C6919E2D70BA5F00EFEE47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,6 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C691DB2D70BA6E00EFEE47 /* Assets.xcassets in Resources */,
+				73C691DD2D70BA6E00EFEE47 /* LaunchScreen.storyboard in Resources */,
+				73C691DE2D70BA6E00EFEE47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C691DF2D70BA6E00EFEE47 /* AppDelegate.swift in Sources */,
+				73C691E02D70BA6E00EFEE47 /* SceneDelegate.swift in Sources */,
+				73C691E12D70BA6E00EFEE47 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C691E42D70BA7100EFEE47 /* BostaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C691E82D70BA7400EFEE47 /* BostaUITests.swift in Sources */,
+				73C691E92D70BA7400EFEE47 /* BostaUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +302,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		73C691D52D70BA6E00EFEE47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C691D42D70BA6E00EFEE47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		73C691D72D70BA6E00EFEE47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C691D62D70BA6E00EFEE47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		73C691C72D70BA6100EFEE47 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -297,6 +337,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +366,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
