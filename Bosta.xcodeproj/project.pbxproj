@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73C098242D70C0E9005C6E37 /* HTTPEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPEndpoint.swift; sourceTree = "<group>"; };
+		73C098272D70C2EF005C6E37 /* MoyaProvider+requestAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+requestAsync.swift"; sourceTree = "<group>"; };
 		73C6919D2D70BA5F00EFEE47 /* Bosta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bosta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C691B32D70BA6100EFEE47 /* BostaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C691BD2D70BA6100EFEE47 /* BostaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73C098252D70C0E9005C6E37 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				73C098242D70C0E9005C6E37 /* HTTPEndpoint.swift */,
+				73C098272D70C2EF005C6E37 /* MoyaProvider+requestAsync.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		73C691942D70BA5F00EFEE47 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				73C691D12D70BA6E00EFEE47 /* AppDelegate.swift */,
+				73C098252D70C0E9005C6E37 /* Network */,
 				73C691D22D70BA6E00EFEE47 /* Assets.xcassets */,
 				73C691D32D70BA6E00EFEE47 /* Info.plist */,
 				73C691D52D70BA6E00EFEE47 /* LaunchScreen.storyboard */,
@@ -127,6 +139,13 @@
 			path = BostaUITests;
 			sourceTree = "<group>";
 		};
+		73C6925E2D70BB6700EFEE47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +163,7 @@
 			);
 			name = Bosta;
 			packageProductDependencies = (
+				73C0981F2D70BF68005C6E37 /* Moya */,
 			);
 			productName = Bosta;
 			productReference = 73C6919D2D70BA5F00EFEE47 /* Bosta.app */;
@@ -221,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 73C691942D70BA5F00EFEE47;
+			packageReferences = (
+				73C0981E2D70BF68005C6E37 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 73C6919E2D70BA5F00EFEE47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C098282D70C2EF005C6E37 /* MoyaProviderRequest+Decoder.swift in Sources */,
 				73C691DF2D70BA6E00EFEE47 /* AppDelegate.swift in Sources */,
 				73C691E02D70BA6E00EFEE47 /* SceneDelegate.swift in Sources */,
 				73C691E12D70BA6E00EFEE47 /* ViewController.swift in Sources */,
