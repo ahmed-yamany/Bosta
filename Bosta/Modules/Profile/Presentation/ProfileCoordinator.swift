@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol ProfileCoordinator: Coordinator {
+protocol ProfileCoordinator {
     func navigateToAlbum(_ album: AlbumEntity)
 }
 
-final class ProfileCoordinatorImpl: ProfileCoordinator {
+final class ProfileCoordinatorImpl: ProfileCoordinator, Coordinator {
     typealias VCType = (ProfileCoordinator) -> UIViewController
     
     let navigationController: UINavigationController

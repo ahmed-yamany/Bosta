@@ -10,7 +10,7 @@ import UIKit
 class UserDetailsSection: TableViewSection {
     typealias CellType = UserDetailsCellTableViewCell
 
-    private let user: UserEntity
+    let user: UserEntity
 
     init(user: UserEntity) {
         self.user = user

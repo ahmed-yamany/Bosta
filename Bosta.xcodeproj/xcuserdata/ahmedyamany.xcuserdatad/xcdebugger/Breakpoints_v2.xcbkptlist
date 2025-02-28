@@ -46,9 +46,9 @@
             filePath = "Bosta/Modules/Profile/Presentation/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "updateSections(with:)"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "featchUserProfile()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -62,9 +62,9 @@
             filePath = "Bosta/Modules/Profile/Presentation/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "createAlbumSection(albums:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "featchUserProfile()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -78,10 +78,10 @@
             filePath = "Bosta/Modules/Profile/Presentation/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "featchUserProfile()"
-            landmarkType = "7">
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "ProfileViewModelImplementation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -17,13 +17,13 @@ import UIKit
 class AlbumsTableViewSection: TableViewSection {
     typealias CellType = AlbumTableViewCell
 
-    private let albums: [AlbumEntity]
+    let albums: [AlbumEntity]
 
     /// Closure called when an album is selected.
     ///
     /// This allows the section to communicate user interactions
     /// back to the view model.
-    private let onSelectAlbum: (AlbumEntity) -> Void
+    let onSelectAlbum: (AlbumEntity) -> Void
 
     init(albums: [AlbumEntity], onSelectAlbum: @escaping (AlbumEntity) -> Void) {
         self.albums = albums

@@ -8,10 +8,10 @@
 
 import UIKit
 
-protocol AlbumDetailsCoordinator: Coordinator {
+protocol AlbumDetailsCoordinator {
 }
 
-final class AlbumDetailsCoordinatorImplementation: AlbumDetailsCoordinator {
+final class AlbumDetailsCoordinatorImplementation: AlbumDetailsCoordinator, Coordinator {
     typealias VCType = (AlbumDetailsCoordinator, AlbumEntity) -> UIViewController
     
     let navigationController: UINavigationController

@@ -50,11 +50,13 @@
 		73C0988B2D71EEA4005C6E37 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0988A2D71EEA4005C6E37 /* UICollectionView+.swift */; };
 		73C0988D2D71EEF7005C6E37 /* UIView+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0988C2D71EEF7005C6E37 /* UIView+Identifiable.swift */; };
 		73C098902D71FCC8005C6E37 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 73C0988F2D71FCC8005C6E37 /* Kingfisher */; };
+		73C098962D72106A005C6E37 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C098952D72106A005C6E37 /* ProfileViewModelTests.swift */; };
+		73C098982D7217EE005C6E37 /* ProfileCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C098972D7217EE005C6E37 /* ProfileCoordinatorMock.swift */; };
+		73C0989A2D72180A005C6E37 /* ProfileUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C098992D72180A005C6E37 /* ProfileUseCaseMock.swift */; };
 		73C691DB2D70BA6E00EFEE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C691D22D70BA6E00EFEE47 /* Assets.xcassets */; };
 		73C691DD2D70BA6E00EFEE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C691D52D70BA6E00EFEE47 /* LaunchScreen.storyboard */; };
 		73C691DF2D70BA6E00EFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691D12D70BA6E00EFEE47 /* AppDelegate.swift */; };
 		73C691E02D70BA6E00EFEE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691D82D70BA6E00EFEE47 /* SceneDelegate.swift */; };
-		73C691E42D70BA7100EFEE47 /* BostaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691E22D70BA7100EFEE47 /* BostaTests.swift */; };
 		73C691E82D70BA7400EFEE47 /* BostaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691E52D70BA7400EFEE47 /* BostaUITests.swift */; };
 		73C691E92D70BA7400EFEE47 /* BostaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C691E62D70BA7400EFEE47 /* BostaUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -118,6 +120,9 @@
 		73C098872D71EE7A005C6E37 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		73C0988A2D71EEA4005C6E37 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		73C0988C2D71EEF7005C6E37 /* UIView+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifiable.swift"; sourceTree = "<group>"; };
+		73C098952D72106A005C6E37 /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
+		73C098972D7217EE005C6E37 /* ProfileCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorMock.swift; sourceTree = "<group>"; };
+		73C098992D72180A005C6E37 /* ProfileUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUseCaseMock.swift; sourceTree = "<group>"; };
 		73C6919D2D70BA5F00EFEE47 /* Bosta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bosta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C691B32D70BA6100EFEE47 /* BostaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C691BD2D70BA6100EFEE47 /* BostaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +131,6 @@
 		73C691D32D70BA6E00EFEE47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73C691D42D70BA6E00EFEE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73C691D82D70BA6E00EFEE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73C691E22D70BA7100EFEE47 /* BostaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaTests.swift; sourceTree = "<group>"; };
 		73C691E52D70BA7400EFEE47 /* BostaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaUITests.swift; sourceTree = "<group>"; };
 		73C691E62D70BA7400EFEE47 /* BostaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -356,6 +360,24 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
+		73C098912D720FA0005C6E37 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				73C098922D720FA9005C6E37 /* Profile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		73C098922D720FA9005C6E37 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				73C098992D72180A005C6E37 /* ProfileUseCaseMock.swift */,
+				73C098972D7217EE005C6E37 /* ProfileCoordinatorMock.swift */,
+				73C098952D72106A005C6E37 /* ProfileViewModelTests.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		73C691942D70BA5F00EFEE47 = {
 			isa = PBXGroup;
 			children = (
@@ -395,7 +417,7 @@
 		73C691E32D70BA7100EFEE47 /* BostaTests */ = {
 			isa = PBXGroup;
 			children = (
-				73C691E22D70BA7100EFEE47 /* BostaTests.swift */,
+				73C098912D720FA0005C6E37 /* Modules */,
 			);
 			path = BostaTests;
 			sourceTree = "<group>";
@@ -495,6 +517,7 @@
 					};
 					73C691B22D70BA6100EFEE47 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = 73C6919C2D70BA5F00EFEE47;
 					};
 					73C691BC2D70BA6100EFEE47 = {
@@ -608,7 +631,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73C691E42D70BA7100EFEE47 /* BostaTests.swift in Sources */,
+				73C0989A2D72180A005C6E37 /* ProfileUseCaseMock.swift in Sources */,
+				73C098982D7217EE005C6E37 /* ProfileCoordinatorMock.swift in Sources */,
+				73C098962D72106A005C6E37 /* ProfileViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +852,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
@@ -836,6 +862,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "seamlabs.com.Labothe-caire.BostaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bosta.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bosta";
@@ -846,6 +873,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
