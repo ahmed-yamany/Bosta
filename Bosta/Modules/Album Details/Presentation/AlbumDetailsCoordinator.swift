@@ -12,20 +12,23 @@ protocol AlbumDetailsCoordinator: Coordinator {
 }
 
 final class AlbumDetailsCoordinatorImplementation: AlbumDetailsCoordinator {
-    typealias VCType = (AlbumDetailsCoordinator) -> UIViewController
+    typealias VCType = (AlbumDetailsCoordinator, AlbumEntity) -> UIViewController
     
     let navigationController: UINavigationController
     let viewController: VCType
-
+    let album: AlbumEntity
+    
     init(
         navigationController: UINavigationController,
-        viewController: @escaping VCType
+        viewController: @escaping VCType,
+        album: AlbumEntity
     ) {
         self.navigationController = navigationController
         self.viewController = viewController
+        self.album = album
     }
 
     func start() {
-        navigationController.pushViewController(viewController(self), animated: true)
+        navigationController.pushViewController(viewController(self, album), animated: true)
     }
 }

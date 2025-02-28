@@ -6,6 +6,8 @@
 //
 import UIKit
 
+/// A protocol representing a navigation coordinator responsible for managing screen flow.
+/// Conforming types define how navigation starts and progresses.
 @MainActor
 protocol Coordinator {
     var navigationController: UINavigationController { get }

@@ -5,29 +5,35 @@
 //  Created by Ahmed Yamany on 28/02/2025.
 //
 
+import Moya
 import SwiftUI
 
 struct AlbumDetailsFactoryContainer {
     private static func repository() -> AlbumDetailsRepository {
-        AlbumDetailsRepositoryImplementation()
+        let albumDetailsProvider = MoyaProvider<AlbumDetailsTarget>()
+        return AlbumDetailsRepositoryImplementation(albumDetailsProvider: albumDetailsProvider)
     }
 
     private static func useCase() -> AlbumDetailsUseCase {
-        AlbumDetailsImplementation(repository: Self.repository())
+        AlbumDetailsUseCaseImplementation(repository: Self.repository())
     }
 
     @MainActor
-    private static func viewModel(_ coordinator: AlbumDetailsCoordinator) -> AlbumDetailsViewModel {
-        AlbumDetailsViewModelImplementation(useCase: Self.useCase(), coordinator: coordinator)
+    private static func viewModel(_ coordinator: AlbumDetailsCoordinator, _ album: AlbumEntity) -> AlbumDetailsViewModel {
+        AlbumDetailsViewModelImplementation(useCase: Self.useCase(), coordinator: coordinator, album: album)
     }
 
     @MainActor
-    static private func viewController(_ coordinator: AlbumDetailsCoordinator) -> UIViewController {
-        AlbumDetailsViewController(viewModel: Self.viewModel(coordinator))
+    private static func viewController(_ coordinator: AlbumDetailsCoordinator, _ album: AlbumEntity) -> UIViewController {
+        AlbumDetailsViewController(viewModel: Self.viewModel(coordinator, album))
     }
-    
+
     @MainActor
-    static func coordintor(_ navigationCotroller: UINavigationController) -> Coordinator {
-        AlbumDetailsCoordinatorImplementation(navigationController: navigationCotroller, viewController: Self.viewController)
+    static func coordintor(_ navigationCotroller: UINavigationController, _ album: AlbumEntity) -> Coordinator {
+        AlbumDetailsCoordinatorImplementation(
+            navigationController: navigationCotroller,
+            viewController: Self.viewController,
+            album: album
+        )
     }
 }

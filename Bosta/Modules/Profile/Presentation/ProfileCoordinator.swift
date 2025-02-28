@@ -27,6 +27,6 @@ final class ProfileCoordinatorImpl: ProfileCoordinator {
     }
     
     func navigateToAlbum(_ album: AlbumEntity) {
-        AlbumDetailsFactoryContainer.coordintor(navigationController).start()
+        AlbumDetailsFactoryContainer.coordintor(navigationController, album).start()
     }
 }

@@ -7,6 +7,19 @@
 
 import Foundation
 
-struct AlbumDetailsEntity {
-    
+typealias AlbumDetailsEntity = [PhotoEntity]
+
+struct PhotoEntity: Identifiable {
+    var id = UUID()
+    let title: String
+    let url: URL?
+    let thumbnailUrl: URL?
+}
+
+extension PhotoEntity {
+    init(photo: Photo) {
+        title = photo.title ?? ""
+        url = URL(string: photo.url ?? "")
+        thumbnailUrl = URL(string: photo.thumbnailURL ?? "")
+    }
 }
