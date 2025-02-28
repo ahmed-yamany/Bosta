@@ -6,10 +6,11 @@
 //
 import UIKit
 
+/// This section only displays **one row**, which contains the user's details.
 class UserDetailsSection: TableViewSection {
     typealias CellType = UserDetailsCellTableViewCell
 
-    let user: UserEntity
+    private let user: UserEntity
 
     init(user: UserEntity) {
         self.user = user
@@ -19,8 +20,9 @@ class UserDetailsSection: TableViewSection {
         tableView.registerFromNib(CellType.self)
     }
 
+    /// This section only displays a **single row** for the user details.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        return 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -30,8 +32,8 @@ class UserDetailsSection: TableViewSection {
         cell.update(with: user)
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        tableView.estimatedRowHeight
+        return tableView.estimatedRowHeight
     }
 }

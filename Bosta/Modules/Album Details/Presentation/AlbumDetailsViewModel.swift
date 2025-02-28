@@ -11,6 +11,7 @@ import UIKit
 @MainActor
 protocol AlbumDetailsViewModel {
     var sectionsPublisher: AnyPublisher<[CollectionViewSection], Never> { get }
+    func featchAlbumDetails()
 }
 
 @MainActor
@@ -26,12 +27,14 @@ final class AlbumDetailsViewModelImplementation: AlbumDetailsViewModel {
         self.useCase = useCase
         self.coordinator = coordinator
         self.album = album
+    }
 
+    func featchAlbumDetails() {
         Task {
             do {
                 let photos = try await useCase.getAlbumDetails(id: album.id)
                 sections = [
-                    PhotosCollectionViewSection(photos: photos)
+                    PhotosCollectionViewSection(photos: photos),
                 ]
             } catch {
                 print(error)

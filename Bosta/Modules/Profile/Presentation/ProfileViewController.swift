@@ -9,9 +9,16 @@ import Combine
 import UIKit
 
 class ProfileViewController: UIViewController {
+    // MARK: - subviews
+
     let tableView = UITableView()
+
+    // MARK: Properties
+
     var sections: [TableViewSection] = []
     private var cancellable: Set<AnyCancellable> = []
+
+    // MARK: - INIT
 
     let viewModel: ProfileViewModel
 
@@ -24,6 +31,8 @@ class ProfileViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view = tableView
@@ -31,6 +40,8 @@ class ProfileViewController: UIViewController {
         bindTableViewSections()
         viewModel.featchUserProfile()
     }
+
+    // MARK: - Private Methods
 
     private func configureTableView() {
         tableView.delegate = self
@@ -55,6 +66,8 @@ class ProfileViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource
+
 extension ProfileViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         sections.count
@@ -72,6 +85,8 @@ extension ProfileViewController: UITableViewDataSource {
         sections[safe: indexPath.section]?.tableView(tableView, heightForRowAt: indexPath) ?? tableView.estimatedRowHeight
     }
 }
+
+// MARK: - UITableViewDelegate
 
 extension ProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

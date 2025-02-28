@@ -7,12 +7,24 @@
 
 import UIKit
 
+import UIKit
+
+/// A table view section responsible for displaying a list of albums.
+///
+/// This section conforms to `TableViewSection`, making it a pluggable and interchangeable
+/// part of the table view using the **Strategy Pattern**.
+
 class AlbumsTableViewSection: TableViewSection {
     typealias CellType = AlbumTableViewCell
 
-    let albums: [AlbumEntity]
-    let onSelectAlbum: (AlbumEntity) -> Void
-    
+    private let albums: [AlbumEntity]
+
+    /// Closure called when an album is selected.
+    ///
+    /// This allows the section to communicate user interactions
+    /// back to the view model.
+    private let onSelectAlbum: (AlbumEntity) -> Void
+
     init(albums: [AlbumEntity], onSelectAlbum: @escaping (AlbumEntity) -> Void) {
         self.albums = albums
         self.onSelectAlbum = onSelectAlbum
@@ -23,13 +35,15 @@ class AlbumsTableViewSection: TableViewSection {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        albums.count
+        return albums.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(CellType.self, for: indexPath) else {
+            debugPrint("Could not dequeue cell")
             return UITableViewCell()
         }
+
         let album = albums[indexPath.row]
         cell.update(with: album)
         return cell

@@ -339,9 +339,9 @@
 		73C098762D71374F005C6E37 /* Albums */ = {
 			isa = PBXGroup;
 			children = (
-				73C098772D713761005C6E37 /* AlbumsTableViewSection.swift */,
-				73C098792D71377A005C6E37 /* AlbumTableViewCell.swift */,
 				73C0987A2D71377A005C6E37 /* AlbumTableViewCell.xib */,
+				73C098792D71377A005C6E37 /* AlbumTableViewCell.swift */,
+				73C098772D713761005C6E37 /* AlbumsTableViewSection.swift */,
 			);
 			path = Albums;
 			sourceTree = "<group>";

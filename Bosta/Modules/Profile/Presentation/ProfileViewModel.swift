@@ -31,12 +31,12 @@ final class ProfileViewModelImplementation: ProfileViewModel {
         Task { [weak self] in
             do {
                 let profile = try await self?.useCase.fetchProfile()
-                
+
                 guard let profile else {
                     debugPrint("Failed to fetch profile, for class deallocated")
                     return
                 }
-                
+
                 self?.updateSections(with: profile)
 
             } catch {

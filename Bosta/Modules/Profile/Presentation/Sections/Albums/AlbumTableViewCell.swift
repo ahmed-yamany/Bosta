@@ -8,9 +8,8 @@
 import UIKit
 
 class AlbumTableViewCell: UITableViewCell, Identifiable {
-    
-    @IBOutlet weak var titleLabel: UILabel!
-    
+    @IBOutlet var titleLabel: UILabel!
+
     func update(with album: AlbumEntity) {
         titleLabel.text = album.title
     }

@@ -9,10 +9,16 @@ import Combine
 import UIKit
 
 class AlbumDetailsViewController: UIViewController {
+    // MARK: - subviews
+
     let collectinView = UICollectionView(frame: .zero, collectionViewLayout: .init())
+
+    // MARK: Properties
 
     var sections: [CollectionViewSection] = []
     private var cancellable: Set<AnyCancellable> = []
+
+    // MARK: - INIT
 
     let viewModel: AlbumDetailsViewModel
 
@@ -25,12 +31,17 @@ class AlbumDetailsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view = collectinView
         configureCollectionView()
         bindCollectionViewSections()
+        viewModel.featchAlbumDetails()
     }
+
+    // MARK: - Private Methods
 
     private func configureCollectionView() {
         collectinView.delegate = self
@@ -66,6 +77,8 @@ class AlbumDetailsViewController: UIViewController {
     }
 }
 
+// MARK: - UICollectionViewDataSource
+
 extension AlbumDetailsViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         sections.count
@@ -88,6 +101,8 @@ extension AlbumDetailsViewController: UICollectionViewDataSource {
         return collectionSection.collectionView(collectionView, cellForItemAt: indexPath)
     }
 }
+
+// MARK: - UICollectionViewDelegate
 
 extension AlbumDetailsViewController: UICollectionViewDelegate {
 }
