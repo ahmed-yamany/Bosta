@@ -78,7 +78,7 @@ This ensures the code is **modular**, **testable**, and **easily extensible**.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/BostaTask.git
+    git clone https://github.com/ahmed-yamany/Bosta.git
     ```
 2. Open the project in **Xcode**.
 3. Ensure all dependencies are fetched via **Swift Package Manager**.
