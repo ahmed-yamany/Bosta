@@ -18,9 +18,6 @@ class ProfileViewController: UIViewController {
     init(viewModel: ProfileViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        view = tableView
-        configureTableView()
-        bindTableViewSections()
     }
 
     required init?(coder: NSCoder) {
@@ -29,6 +26,10 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view = tableView
+        configureTableView()
+        bindTableViewSections()
+        viewModel.featchUserProfile()
     }
 
     private func configureTableView() {
@@ -55,14 +56,25 @@ class ProfileViewController: UIViewController {
 }
 
 extension ProfileViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        sections.count
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        sections[section].tableView(tableView, numberOfRowsInSection: section)
+        sections[safe: section]?.tableView(tableView, numberOfRowsInSection: section) ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        sections[indexPath.section].tableView(tableView, cellForRowAt: indexPath)
+        sections[safe: indexPath.section]?.tableView(tableView, cellForRowAt: indexPath) ?? UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        sections[safe: indexPath.section]?.tableView(tableView, heightForRowAt: indexPath) ?? tableView.estimatedRowHeight
     }
 }
 
 extension ProfileViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        sections[safe: indexPath.section]?.tableView(tableView, didSelectRowAt: indexPath)
+    }
 }

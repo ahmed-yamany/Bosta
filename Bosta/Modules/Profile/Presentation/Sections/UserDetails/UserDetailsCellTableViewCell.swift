@@ -13,5 +13,10 @@ class UserDetailsCellTableViewCell: UITableViewCell, Identifiable {
     @IBOutlet var emailLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
 
-    
+    func update(with user: UserEntity) {
+        nameLabel.text = user.name
+        usernameLabel.text = user.userName
+        emailLabel.text = user.email
+        addressLabel.text = user.address
+    }
 }

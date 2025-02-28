@@ -12,14 +12,22 @@ protocol ProfileUseCase {
 }
 
 final actor ProfileUseCaseImplementation: ProfileUseCase {
-    
     let repository: ProfileRepository
-    
+
     init(repository: ProfileRepository) {
         self.repository = repository
     }
-    
+
     func fetchProfile() async throws -> ProfileEntity {
-        ProfileEntity()
+        let users = try await repository.getUsersDetails()
+        let user = users.first(where: { $0.userName.contains("Bret") })
+
+        guard let user else {
+            throw NSError(domain: "Search Error: Did not find the user", code: 0)
+        }
+        
+        let albums = try await repository.getAlbums(for: 1)
+        
+        return ProfileEntity(user: user, albums: albums)
     }
 }

@@ -8,5 +8,6 @@
 import Foundation
 
 struct ProfileEntity {
-    
+    let user: UserEntity
+    let albums: [AlbumEntity]
 }
