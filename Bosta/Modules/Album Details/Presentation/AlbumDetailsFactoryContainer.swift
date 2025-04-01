@@ -19,21 +19,24 @@ struct AlbumDetailsFactoryContainer {
     }
 
     @MainActor
-    private static func viewModel(_ coordinator: AlbumDetailsCoordinator, _ album: AlbumEntity) -> AlbumDetailsViewModel {
-        AlbumDetailsViewModelImplementation(useCase: Self.useCase(), coordinator: coordinator, album: album)
+    private static func viewModel(_ coordinator: AlbumDetailsCoordinatorImp, _ album: AlbumEntity) -> AlbumDetailsViewModel {
+        AlbumDetailsViewModelImplementation(useCase: Self.useCase(), coordinator: WeakReferance(object: coordinator), album: album)
     }
 
     @MainActor
-    private static func viewController(_ coordinator: AlbumDetailsCoordinator, _ album: AlbumEntity) -> UIViewController {
+    private static func viewController(_ coordinator: AlbumDetailsCoordinatorImp, _ album: AlbumEntity) -> UIViewController {
         AlbumDetailsViewController(viewModel: Self.viewModel(coordinator, album))
     }
 
     @MainActor
     static func coordintor(_ navigationCotroller: UINavigationController, _ album: AlbumEntity) -> Coordinator {
-        AlbumDetailsCoordinatorImplementation(
+        AlbumDetailsCoordinatorImp(
             navigationController: navigationCotroller,
             viewController: Self.viewController,
             album: album
         )
     }
+}
+
+extension WeakReferance: AlbumDetailsCoordinator where T: AlbumDetailsCoordinator {
 }

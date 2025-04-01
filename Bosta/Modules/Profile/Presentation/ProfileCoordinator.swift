@@ -12,7 +12,7 @@ protocol ProfileCoordinator {
 }
 
 final class ProfileCoordinatorImpl: ProfileCoordinator, Coordinator {
-    typealias VCType = (ProfileCoordinator) -> UIViewController
+    typealias VCType = (ProfileCoordinatorImpl) -> UIViewController
     
     let navigationController: UINavigationController
     let viewController: VCType

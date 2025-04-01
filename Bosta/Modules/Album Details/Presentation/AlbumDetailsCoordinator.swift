@@ -11,8 +11,8 @@ import UIKit
 protocol AlbumDetailsCoordinator {
 }
 
-final class AlbumDetailsCoordinatorImplementation: AlbumDetailsCoordinator, Coordinator {
-    typealias VCType = (AlbumDetailsCoordinator, AlbumEntity) -> UIViewController
+final class AlbumDetailsCoordinatorImp: AlbumDetailsCoordinator, Coordinator {
+    typealias VCType = (AlbumDetailsCoordinatorImp, AlbumEntity) -> UIViewController
     
     let navigationController: UINavigationController
     let viewController: VCType

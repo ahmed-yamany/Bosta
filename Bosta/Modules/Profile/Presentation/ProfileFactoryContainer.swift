@@ -5,8 +5,8 @@
 //  Created by Ahmed Yamany on 27/02/2025.
 //
 
-import UIKit
 import Moya
+import UIKit
 
 struct ProfileFactoryContainer {
     private static func repository() -> ProfileRepository {
@@ -20,17 +20,23 @@ struct ProfileFactoryContainer {
     }
 
     @MainActor
-    private static func viewModel(_ coordinator: ProfileCoordinator) -> ProfileViewModel {
-        ProfileViewModelImplementation(useCase: Self.useCase(), coordinator: coordinator)
+    private static func viewModel(_ coordinator: ProfileCoordinatorImpl) -> ProfileViewModel {
+        ProfileViewModelImplementation(useCase: Self.useCase(), coordinator: WeakReferance(object: coordinator))
     }
 
     @MainActor
-    static private func viewController(_ coordinator: ProfileCoordinator) -> UIViewController {
+    private static func viewController(_ coordinator: ProfileCoordinatorImpl) -> UIViewController {
         ProfileViewController(viewModel: Self.viewModel(coordinator))
     }
-    
+
     @MainActor
     static func coordintor(_ navigationCotroller: UINavigationController) -> Coordinator {
         ProfileCoordinatorImpl(navigationController: navigationCotroller, viewController: Self.viewController)
+    }
+}
+
+extension WeakReferance: ProfileCoordinator where T: ProfileCoordinator {
+    func navigateToAlbum(_ album: AlbumEntity) {
+        object?.navigateToAlbum(album)
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733256A32D9C3FFC0059EF09 /* WeakReferance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733256A22D9C3FFB0059EF09 /* WeakReferance.swift */; };
 		73C098202D70BF68005C6E37 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 73C0981F2D70BF68005C6E37 /* Moya */; };
 		73C098262D70C0E9005C6E37 /* HTTPEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C098242D70C0E9005C6E37 /* HTTPEndpoint.swift */; };
 		73C098282D70C2EF005C6E37 /* MoyaProviderRequest+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C098272D70C2EF005C6E37 /* MoyaProviderRequest+Decoder.swift */; };
@@ -80,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		733256A22D9C3FFB0059EF09 /* WeakReferance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakReferance.swift; sourceTree = "<group>"; };
 		73C098242D70C0E9005C6E37 /* HTTPEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPEndpoint.swift; sourceTree = "<group>"; };
 		73C098272D70C2EF005C6E37 /* MoyaProviderRequest+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProviderRequest+Decoder.swift"; sourceTree = "<group>"; };
 		73C0982B2D70CB12005C6E37 /* AlbumsTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTarget.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 		73C098632D7128B9005C6E37 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				733256A22D9C3FFB0059EF09 /* WeakReferance.swift */,
 				73C098432D70CEFE005C6E37 /* Coordinator.swift */,
 				73C098642D7128C5005C6E37 /* TableViewSection.swift */,
 				73C098812D71EC36005C6E37 /* CollectionViewSection.swift */,
@@ -614,6 +617,7 @@
 				73C098882D71EE7A005C6E37 /* PhotoCollectionViewCell.swift in Sources */,
 				73C0982C2D70CB12005C6E37 /* AlbumsTarget.swift in Sources */,
 				73C098382D70CC44005C6E37 /* ProfileViewModel.swift in Sources */,
+				733256A32D9C3FFC0059EF09 /* WeakReferance.swift in Sources */,
 				73C0983A2D70CC8C005C6E37 /* ProfileFactoryContainer.swift in Sources */,
 				73C098652D7128C5005C6E37 /* TableViewSection.swift in Sources */,
 				73C0982E2D70CB34005C6E37 /* Album.swift in Sources */,
